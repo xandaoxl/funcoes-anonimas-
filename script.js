@@ -12,10 +12,10 @@ const shoesList = document.getElementById('shoes-list')
 
 shoes.forEach((shoe) => {
     const li = document.createElement('li')
-    li.textContent = `${shoe.nome} - $${shoe.preco}`
     const img = document.createElement('img')
     img.src = shoe.imagem
+    img.width = 100
+    li.textContent = `${shoe.nome} - $${shoe.preco}`
     li.appendChild(img)
     shoesList.appendChild(li)
 })
-
